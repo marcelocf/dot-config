@@ -38,6 +38,7 @@ local servers = {
   'pyright',        -- python
   'rust_analyzer',  -- rust
   'sumneko_lua',    -- lua
+  'terraformls',   -- terraform, from hashcorp since it supports newer vers
   'tsserver',       -- typescrypt
 }
 for _, lsp in pairs(servers) do
