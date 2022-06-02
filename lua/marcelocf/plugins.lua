@@ -8,14 +8,20 @@ Plug 'nvim-treesitter/nvim-treesitter'
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md for servers
 Plug 'neovim/nvim-lspconfig'
 
+-- Autocompletion
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 
+-- :MarkdownPreview
+Plug('iamcco/markdown-preview.nvim', {['do'] = 'cd app && yarn install' })
 
---Plug 'neoclide/coc.nvim' -- this is "nice" to install, but idk... I want to control
+Plug 'godlygeek/tabular'
+--Plug 'preservim/vim-markdown'
+Plug 'tpope/vim-markdown'
+
 
 vim.call('plug#end')
 
