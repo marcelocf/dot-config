@@ -1,6 +1,5 @@
 require "marcelocf.plugins"
+require "marcelocf.lsp"
+require "marcelocf.autocomplete"
 require "marcelocf.treesitter"
 require "marcelocf.options"
-require "marcelocf.lsp"
-
-require "marcelocf.autocomplete"

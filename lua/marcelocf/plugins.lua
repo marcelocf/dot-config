@@ -19,9 +19,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug('iamcco/markdown-preview.nvim', {['do'] = 'cd app && yarn install' })
 
 Plug 'godlygeek/tabular'
---Plug 'preservim/vim-markdown'
-Plug 'tpope/vim-markdown'
 
+Plug 'hashivim/vim-terraform'
 
 vim.call('plug#end')
 
