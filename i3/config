@@ -63,6 +63,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# lock screen
+bindsym $mod+Alt+l exec --no-startup-id i3lock
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -191,7 +194,7 @@ bindsym $mod+r mode "resize"
 #	height 25
 #}
 
-exec_always --no-startup-id polybar &
+exec --no-startup-id polybar &
 
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 0
@@ -206,8 +209,8 @@ gaps outer -2
 
 
 
-exec setxkbmap -layout jp
-exec ibus-daemon -d
-exec --no-startup-id picom -CGb
-exec nitrogen --restore
-exec ibus engine mozc-jp
+exec setxkbmap -layout jp &
+exec ibus-daemon -d &
+exec --no-startup-id picom -CGb &
+exec nitrogen --restore &
+exec ibus engine mozc-jp &
