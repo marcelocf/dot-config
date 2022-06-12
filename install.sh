@@ -8,7 +8,8 @@ TMSTP=`date +%s`
 for CFGDIR in */
 do
 	DESTDIR=$HOME/.config/`basename $CFGDIR`
-	test -h $DESTDIR && mv $DESTDIR $DESTDIR-$TMSTP 
+	test -d $DESTDIR && mv $DESTDIR $DESTDIR-$TMSTP-dir
+	test -h $DESTDIR && mv $DESTDIR $DESTDIR-$TMSTP-link
 	ln -s $PWD/$CFGDIR $DESTDIR
 done
 
