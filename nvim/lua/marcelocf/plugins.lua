@@ -22,5 +22,7 @@ Plug 'godlygeek/tabular'
 
 Plug 'hashivim/vim-terraform'
 
+Plug 'farmergreg/vim-lastplace'
+
 vim.call('plug#end')
 
