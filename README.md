@@ -12,4 +12,3 @@ This is licensed under Apache license.
 ## Theme
 
 I am using the [Nord](https://www.nordtheme.com/) theme as much as I can.
-
