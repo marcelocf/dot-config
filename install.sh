@@ -5,9 +5,10 @@
 
 TMSTP=`date +%s`
 
-for CFGDIR in */
+for CFGDIR in */ picom.conf
 do
 	DESTDIR=$HOME/.config/`basename $CFGDIR`
+	test -f $DESTDIR && mv $DESTDIR $DESTDIR-$TMSTP-file
 	test -d $DESTDIR && mv $DESTDIR $DESTDIR-$TMSTP-dir
 	test -h $DESTDIR && mv $DESTDIR $DESTDIR-$TMSTP-link
 	ln -s $PWD/$CFGDIR $DESTDIR
