@@ -11,10 +11,11 @@
     background_color = "#2e3440"
     background_darkness = 0.75
     cursor_color = "#D8DEE9"
-    font = Noto Sans Mono CJK TC 11
+    font = MesloLGS NF 11
     foreground_color = "#d8dee9"
     palette = "#3B4252:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#88C0D0:#E5E9F0:#4C566A:#BF616A:#A3BE8C:#EBCB8B:#81A1C1:#B48EAD:#8F  BCBB:#ECEFF4"
     login_shell = True
+    use_system_font = False
 [layouts]
   [[default]]
     [[[window0]]]
