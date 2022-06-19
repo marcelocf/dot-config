@@ -10,3 +10,6 @@ pactl set-default-sink alsa_output.usb-Yamaha_Corporation_AG06_AG03-00.analog-st
 
 ( sleep 5 && ibus engine mozc-jp ) &
 
+
+# disable mouse acceleration
+xset m 0 0
