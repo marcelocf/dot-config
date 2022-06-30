@@ -25,5 +25,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'farmergreg/vim-lastplace'
 Plug 'sirver/ultisnips'
 
+Plug 'lambdalisue/suda.vim'
+
 vim.call('plug#end')
 
